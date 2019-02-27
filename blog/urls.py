@@ -9,4 +9,6 @@ urlpatterns = [
 #Como você pode ver, estamos agora atribuindo uma view
 #chamada post_list à URL raiz.
 #A última parte, name='post_list', é o nome da URL que será usado para identificar a view.
+
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
 ]
